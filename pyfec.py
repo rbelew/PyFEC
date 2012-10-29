@@ -84,7 +84,7 @@ AllTblNames = ['cand', 'comm', 'contrib', 'ccl', 'indiv', 'pas', 'oth']
 
 class DBConn():
 	def __init__(self,dbName=''):
-		self.currDB = _mysql.connect(host="localhost",user="root", passwd="sql4monk", db=dbName)
+		self.currDB = _mysql.connect(host="localhost",user="root", passwd="PWHERE", db=dbName)
 
 	def get_tableNames(self):
 		self.currDB.query('show tables;')
